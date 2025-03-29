@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,6 +53,23 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				healthcare: {
+					50: "#E6F7F9",
+					100: "#CCF0F4",
+					200: "#99E0E9",
+					300: "#66D1DE",
+					400: "#33C1D3",
+					500: "#00B2C8",
+					600: "#008EA0",
+					700: "#006B78",
+					800: "#004750",
+					900: "#002428",
+				},
+				alert: {
+					low: "#FCD34D",
+					medium: "#FB923C",
+					high: "#EF4444",
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +102,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-subtle': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.8' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-subtle': 'pulse-subtle 3s ease-in-out infinite',
 			}
 		}
 	},
